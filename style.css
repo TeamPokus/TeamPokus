@@ -1,0 +1,115 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #1c1c1c;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+  }
+  
+  /* Main Content Styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    color: #ffffff;
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    background-color: #1c1c1c;
+    color: #ffffff;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    color: #ffffff;
+  }

@@ -1,0 +1,94 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #1c1c1c;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+  }
+  
+  /* Main Content Styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .players-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .players-list li {
+    background-color: #1c1c1c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Add border-radius property */
+  }
+  
+  .players-list li h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .players-list li p {
+    color: #ffffff;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    color: #ffffff;
+  }
+  
