@@ -66,7 +66,11 @@
     border-radius: 8px;
     list-style-type: none;
   }
-  
+
+  .schedule-list li a{
+    text-decoration: none;
+  }
+
   .schedule-list li h3 {
     font-size: 24px;
     color: #ffffff;
