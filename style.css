@@ -40,6 +40,8 @@
   nav ul li {
     display: inline-block;
     margin-right: 10px;
+    text-transform: uppercase;
+    position: relative;
   }
   
   nav ul li a {
@@ -47,12 +49,110 @@
     color: #ffffff;
     padding: 5px 10px;
   }
-  
+
+  nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #E52029;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+  }
+
+  nav ul li:hover::after {
+    width: 100%;
+  }
+
   /* Main Content Styles */
   .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
+  }
+
+  button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #E52029;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  span {
+    background: #E52029;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+
+  button:hover span{
+    width: 100%;
+  }
+
+  button:hover span{
+    border: none;
+  }
+
+  .players-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .players-list li {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Add border-radius property */
+  }
+  
+  .players-list li h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .players-list li p {
+    color: #ffffff;
+  }
+  .schedule-list li {
+    background-color: #1c1c1c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    list-style-type: none;
+  }
+
+  .schedule-list li a{
+    text-decoration: none;
+  }
+
+  .schedule-list li h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .schedule-list li p {
+    color: #ffffff;
+    margin-bottom: 5px;
   }
   
   /* Footer Styles */
@@ -64,10 +164,15 @@
   
   footer p {
     color: #ffffff;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
   }
   
   .container h2 {
-    margin-bottom: 20px;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
   }
   
   .form-group {
@@ -93,14 +198,14 @@
   button[type="submit"] {
     padding: 10px 20px;
     border-radius: 8px;
-    background-color: #ff0000;
+    background-color: #E52029;
     color: #ffffff;
     border: none;
     cursor: pointer;
   }
   
   button[type="submit"]:hover {
-    background-color: #cc0000;
+    background-color: #e5202abd;
   }
   
   /* Footer Styles */
